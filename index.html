@@ -73,12 +73,14 @@
             </nav>
             <!-- parallax img scetion  -->
             <div class="container">
+
                 <div class="parallax">
                     <!-- needs work -->
-                    <img style="height: 800px; 
+                    <img style="height: 700px;
                                 position: absolute;
-                                top: 200px;
-                                left: 300px;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%)
                                 " src="images/logo/TAF.svg" alt="logo">
                 </div>
             </div>
@@ -125,7 +127,7 @@
                         margin-top: 300px;">We Specialize In</h2>
             </div>
             <!-- top row of images for we specialize -->
-            <div class="container" style="justify-content: center;">
+            <div class="container" style="margin: 0 auto; justify-content: center; align-items: center; ">
 
                 <col><img
                     style="height: 350px; width: 350px; margin: 20px; border-radius: 45px; border: 3px solid rgb(13, 27, 42); box-shadow: 3px 3px 3px;"
@@ -242,8 +244,8 @@
             </div>
             <!-- this section is for the calculator html -->
             <div class="row">
-                <article id="calculator" class="col-xs-12 col-sm-6 pt-4" style="margin: 0 auto;">
-                    <div class="card text-white mb-3 mt-4" style="
+                <article id="calculator">
+                    <div class="card" style="
                                 background-color: rgb(27, 38, 59);
                                 color: white;
                                 height: 1000px;
@@ -257,6 +259,7 @@
                                 margin-bottom: 50px;
                                 margin-top: 50px;
                                 padding-bottom: 20px;">
+
                         <div class="card-body">
                             <div class="title"><span class="ft">ft</span><sup>2</sup> <span
                                     class="calculator">Calculator</span>
@@ -270,7 +273,7 @@
                                     <div class="form-outline form-white">
 
                                         <input type="number" id="width" class="w-l-input form-control form-control-sm"
-                                            min="1" max="1000000" />
+                                            min="1" max="1000000">
                                         <label class="form-label" for="width">Width</label>
 
                                     </div>
@@ -279,7 +282,7 @@
                                     <div class="form-outline form-white">
 
                                         <input type="number" id="length" class="w-l-input form-control form-control-sm"
-                                            min="1" max="1000000" />
+                                            min="1" max="1000000">
                                         <label class="form-label" for="length">Length</label>
 
                                     </div>
@@ -295,7 +298,7 @@
                                     <div class="form-outline form-white">
 
                                         <input type="number" id="total" class="form-control form-control-lg" min="1"
-                                            max="1000000" />
+                                            max="1000000">
                                         <label class="form-label" for="total">Total Square Feet</label>
 
                                     </div>
@@ -345,17 +348,17 @@
 
 
                     </div>
+                </article>
             </div>
+
         </div>
 
-    </div>
 
 
-    </div>
-    <!-- references section -->
-    <div class="container">
-        <div class="row">
-            <h2 class="title" style="background-color: rgb(27, 38, 59);                    
+        <!-- references section -->
+        <div class="container">
+            <div class="row">
+                <h2 class="title" style="background-color: rgb(27, 38, 59);                    
                         color: white;
                         height: 80px;
                         width: 750px; 
@@ -367,37 +370,62 @@
                         border-radius: 25px; 
                         margin-bottom: 50px;
                         margin-top: 200px;">References and Testimonials</h2>
-            <div class="row" style="
-                background-color: rgb(27, 38, 59);
-                color: white;
-                height: 600px;
-                width: 1000px;
-                font-size: 30px;
-                margin: 0 auto;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 25px;
-                margin-bottom: 50px;
-                margin-top: 50px;">
-                <div class="row" style="">
 
-                    <row style="height: 100px; width: 100px; border-radius: 50%; background-color: black; ">
-                        <col style="margin: 0 auto;">J.D
-                        <p></p>
-                    </row>
+                <div class="container" style="
+                        background-color: rgb(27, 38, 59);
+                        color: white;
+                        height: 800px;
+                        width: 1000px;
+                        overflow: scroll;
+                        font-size: 30px;
+                        border-radius: 25px;
+                        margin-bottom: 50px;
+                        margin-top: 50px;
+                        padding: 20px;">
 
-                    <hr style="border: 1px solid black;">
+                    <div class="container" style="height: 100px; width: 1000px; border-radius: 50%; ">
+                        <row
+                            style="height: 50px; width: 50px; border-radius: 50%; background-color: rgb(119, 141, 169); color: black;">
+                            M.K:</row>
 
-                    <col style="height: 100px; width: 100px; border-radius: 50%; background-color: white;">M.J
+                        <p style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                            voluptates perferendis cumque,
+                            asperiores sequi, consectetur amet quam quaerat quasi nihil, omnis dolorum libero? Eaque
+                            reiciendis autem voluptatibus atque incidunt delectus!</p>
+                        <hr style="border: 1px solid rgb(255, 255, 255);">
+
+                        <row
+                            style="height: 50px; width: 50px; border-radius: 25px; background-color: rgb(255, 255, 255); color: black;">
+                            J.D:</row>
 
 
+                        <p style="color: white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In
+                            inventore id esse sunt quas
+                            velit soluta molestias dolores obcaecati dolorem, pariatur perspiciatis dolor harum
+                            aliquid mollitia reiciendis ea, maiores aspernatur?
+                            Quae veritatis, distinctio nihil accusantium, voluptatum, dolorem quisquam debitis
+                            incidunt sapiente provident nemo odio totam! Culpa ducimus, exercitationem
+                            laudantium,
+                            eum dolore modi aliquam maxime sapiente aut odit repellendus fugit dolorum?</p>
+                        <hr style="border: 1px solid rgb(255, 255, 255);">
+
+                        <row
+                            style="height: 50px; width: 50px; border-radius: 25px; background-color: rgb(255, 255, 255); color: black;">
+                            M.J:</row>
+
+
+                        <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Rerum, quos repudiandae.
+                            Provident nulla error fuga suscipit similique laudantium officia, vero minima
+                            aliquid
+                            itaque autem, asperiores at ea quod perspiciatis nisi!</p>
+                        <hr style="border: 1px solid rgb(255, 255, 255);">
+                    </div>
+                    <p style="font-size: 22px; margin-bottom: 100px; background-color: transparent;">
+                    </p>
                 </div>
-                <p style="font-size: 22px; margin-bottom: 100px; background-color: transparent;">
-                </p>
             </div>
         </div>
-    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="script.js"></script>

@@ -1,41 +1,43 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
 }
 
 .text-block {
-    position: absolute;
-    color: aliceblue;
-    top: 50%;
-    left: 50%;
-    background-color: black;
-    opacity: .90;
-    color: white;
+  position: absolute;
+  color: aliceblue;
+  top: 50%;
+  left: 50%;
+  background-color: black;
+  opacity: .90;
+  color: white;
 
 
 }
 
 /* css for calculator */
 .title {
-	text-align:center;
-	padding: 6px;
-	border-bottom: 1px dotted #ffffff;
-	margin-bottom:16px;
+  text-align: center;
+  padding: 6px;
+  border-bottom: 1px dotted #ffffff;
+  margin-bottom: 16px;
 }
-.title .ft{
-	font-size:2em;
+
+.title .ft {
+  font-size: 2em;
 }
 
 .title sup {
-	font-size:1em;
+  font-size: 1em;
 }
+
 .title .calculator {
   font-style: italic;
-	font-weight:light;
-	color:#ffffff;
+  font-weight: light;
+  color: #ffffff;
 }
 
 .description {
-	font-size:.7em;
+  font-size: .7em;
 }
