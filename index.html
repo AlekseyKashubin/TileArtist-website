@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tile Artiste</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        .parallax {
+            /* The image used */
+            background-image: url(images/logo/Screen+Shot+2020-08-01+at+4.06.00+am.png);
+
+
+            /* Set a specific height */
+            min-height: 1200px;
+            /* Create the parallax scrolling effect */
+            position: relative;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(224, 225, 221);">
+    <div class="container">
+        <div class="container">
+            <!-- navbar section  -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <img style="height: 80px;" src="images/logo/TAF-white.svg" alt="logo">
+                    <a class="navbar-brand" style="color: white; font-size: 60px;" href="#">Tile Artiste</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="container">
+                        <div class="collapse navbar-collapse" style="justify-content: flex-end;" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" style="color: white;" aria-current="page"
+                                        href="#">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="color: white;" href="#">Contact</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" style="color: white;" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        More
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Home</a></li>
+                                        <li><a class="dropdown-item" href="#">About Us</a></li>
+                                        <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                        <li><a class="dropdown-item" href="#">Get a Qoute</a></li>
+                                        <li><a class="dropdown-item" href="#">References</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- parallax img scetion  -->
+            <div class="container">
+                <div class="parallax">
+                    <img style="height: 800px; 
+                                position: absolute;
+                                top: 200px;
+                                left: 310px;
+                                " src="images/logo/TAF.svg" alt="logo">
+                </div>
+            </div>
+        </div>
+        <div class=" container">
+            <!-- about us section-->
+            <div class="row">
+                <h2 class="title" style="background-color: rgb(27, 38, 59);                    
+                        color: white;
+                        height: 80px;
+                        width: 750px; 
+                        font-size: 30px; 
+                        margin: 0 auto;
+                        display: flex; 
+                        align-items: center; 
+                        justify-content: center; 
+                        border-radius: 25px; 
+                        margin-bottom: 50px;
+                        margin-top: 200px;">About Us</h2>
+                <p style="font-size: 22px; margin-bottom: 100px; background-color: transparent;"> Tile Artist is a
+                    family owned and operated home improvment business. We have been serving the
+                    people of Whatcom County for over 20 years. Our goal is to find the right product, buget and design
+                    that leaves the coustomers happy and satisfied. Some of the services we provide are: Bathroom
+                    Remodeling,
+                    Countertop Installation, Custom Kitchen Cabinets, Flooring Installation, Home Remodeling, Kitchen
+                    Remodeling,
+                    Tile Installation, Custom Showers and much more.
+                </p>
+            </div>
+            <!-- we specialize section here -->
+            <div class="row">
+                <h2 class="title" style="
+                        background-color: rgb(27, 38, 59);
+                        color: white;
+                        height: 80px;
+                        width: 750px;
+                        font-size: 30px;
+                        margin: 0 auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 25px;
+                        margin-bottom: 50px;
+                        margin-top: 300px;">We Specialize In</h2>
+            </div>
+            <!-- top row of images for we specialize -->
+            <div class="container" style="justify-content: center;">
+
+                <col><img
+                    style="height: 350px; width: 350px; margin: 20px; border-radius: 45px; border: 3px solid rgb(13, 27, 42); box-shadow: 3px 3px 3px;"
+                    src="images/carpet_look.jpg" alt="carpet">
+                <div class="text-block">Carpet</div>
+
+                <col><img
+                    style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42); box-shadow: 3px 3px 3px;"
+                    src="images/tile_floor.jpg" alt="tile floor">
+
+                <col><img
+                    style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42); box-shadow: 3px 3px 3px;"
+                    src="images/quartzbackground.jpg" alt="countertop">
+            </div>
+            <!-- bottom row of images for we specialize -->
+            <div class="container" style="justify-content: center;">
+                <col><img
+                    style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42); box-shadow: 3px 3px 3px;"
+                    src="images/midnight-blue-shaker-cabinets.jpg" alt="cabinets">
+
+                <col><img
+                    style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42); box-shadow: 3px 3px 3px;"
+                    src="images/wood-lam2.jpg" alt="hardwood">
+
+                <col><img
+                    style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42); box-shadow: 3px 3px 3px;"
+                    src="images/Interior-Designer.jpg" alt="design">
+            </div>
+
+        </div>
+        <!-- gallery section  -->
+        <div class="container">
+            <h2 class="title" style="
+                    background-color: rgb(27, 38, 59);
+                    color: white;
+                    height: 80px;
+                    width: 750px;
+                    font-size: 30px;
+                    margin: 0 auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 25px;
+                    margin-bottom: 50px;
+                    margin-top: 300px;">Gallery</h2>
+        </div>
+        <!-- first row of images for gallery -->
+        <div class="container" style="justify-content: center;">
+            <col><img
+                style="height: 350px; width: 350px; margin: 20px; border-radius: 45px; border: 3px solid rgb(13, 27, 42);"
+                src="images/Gallery/20181204_123842.jpg" alt="carpet">
+            <col><img
+                style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
+                src="images/Gallery/20190201_130916.jpg" alt="tile floor">
+            <col><img
+                style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
+                src="images/Gallery/20190403_094846.jpg" alt="countertop">
+        </div>
+        <!-- second row of images for gallery -->
+        <div class="container" style="justify-content: center;">
+            <col><img
+                style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
+                src="images/Gallery/20200819_165132.jpg" alt="cabinets">
+            <col><img
+                style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
+                src="images/Gallery/20210119_151156.jpg" alt="hardwood">
+            <col><img
+                style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
+                src="images/Gallery/20210312_171811.jpg" alt="design">
+        </div>
+        <!-- third row of images for gallery -->
+        <div class="container" style="justify-content: center;">
+            <col><img
+                style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
+                src="images/Gallery/Smuland-Oregon-Architectural-Photographer-Cheryl-McIntosh-9-e1584575333146.webp"
+                alt="cabinets">
+            <col><img
+                style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
+                src="images/Gallery/20210414_130127.jpg" alt="hardwood">
+            <col><img
+                style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
+                src="images/Gallery/IMG_1982.jpg" alt="design">
+        </div>
+        <!-- forth row of images for gallery -->
+        <div class="container" style="justify-content: center;">
+            <col><img
+                style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
+                src="images/Gallery/20210806_114753.jpg" alt="cabinets">
+            <col><img
+                style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
+                src="images/Gallery/20210526_131133.jpg" alt="hardwood">
+            <col><img
+                style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
+                src="images/Gallery/20210426_114442.jpg" alt="design">
+        </div>
+        
+        <!-- project calculator section -->
+        <div class="container">
+            <div class="row">
+                <h2 class="title" style="
+                        background-color: rgb(27, 38, 59);
+                        color: white;
+                        height: 80px;
+                        width: 750px;
+                        font-size: 30px;
+                        margin: 0 auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 25px;
+                        margin-bottom: 50px;
+                        margin-top: 300px;">Calculate your project</h2>
+
+            </div>
+            <div class="row">
+
+                <div class="title" style="
+                        background-color: rgb(27, 38, 59);
+                        color: white;
+                        height: 600px;
+                        width: 400px;
+                        font-size: 30px;
+                        margin: 0 auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 25px;
+                        margin-bottom: 50px;
+                        margin-top: 50px;">
+
+                    <div class="row" style="margin: 0 auto; justify-content: center;">
+                        <div class="length_wrapper" >
+                            <h3 style="text-align: center; margin-top: 20px;">Length</h3>
+                            <input type="text" style="margin-left: 25px;" id="length_feet" name="length_feet">
+                            <label for="length_feet">feet</label>
+                        </div>
+                        <div class="width_wrapper">
+                            <h3 style="text-align: center; margin-top: 20px;">Width</h3>
+                            <input type="text" style="margin-left: 25px;" id="width_feet" name="width_feet">
+                            <label for="width_feet">feet</label>
+                        </div>
+                        
+                        <div class="total_wrapper">
+                            <h3 style="text-align: center; margin-top: 20px;">Total</h3>
+                            <input type="text" style="margin-left: 25px;" id="total" name="total">
+                            <label for="total">sq ft</label>
+                        </div>
+                        
+                        <button type="button" style="width: 200px; margin-top: 40px;" id="calculate" name="button">Calculate</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- references section -->
+        <div class="container">
+            <div class="row">
+                <h2 class="title" style="background-color: rgb(27, 38, 59);                    
+                        color: white;
+                        height: 80px;
+                        width: 750px; 
+                        font-size: 30px; 
+                        margin: 0 auto;
+                        display: flex; 
+                        align-items: center; 
+                        justify-content: center; 
+                        border-radius: 25px; 
+                        margin-bottom: 50px;
+                        margin-top: 200px;">References and Testimonials</h2>
+                <div class="row" style="
+                background-color: rgb(27, 38, 59);
+                color: white;
+                height: 600px;
+                width: 1000px;
+                font-size: 30px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 25px;
+                margin-bottom: 50px;
+                margin-top: 50px;">
+                <div class="row">
+                    <col style="height: 100px; width: 100px; border-radius: 50%; background-color: white;">J.D
+                <hr style="border: 1px solid black;">
+                    <col style="height: 100px; width: 100px; border-radius: 50%; background-color: white;">M.J
+
+                    
+                    </div>
+                    <p style="font-size: 22px; margin-bottom: 100px; background-color: transparent;">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+
+</html>
