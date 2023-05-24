@@ -74,10 +74,11 @@
             <!-- parallax img scetion  -->
             <div class="container">
                 <div class="parallax">
+                    <!-- needs work -->
                     <img style="height: 800px; 
                                 position: absolute;
                                 top: 200px;
-                                left: 310px;
+                                left: 300px;
                                 " src="images/logo/TAF.svg" alt="logo">
                 </div>
             </div>
@@ -129,7 +130,7 @@
                 <col><img
                     style="height: 350px; width: 350px; margin: 20px; border-radius: 45px; border: 3px solid rgb(13, 27, 42); box-shadow: 3px 3px 3px;"
                     src="images/carpet_look.jpg" alt="carpet">
-                <div class="text-block">Carpet</div>
+                <div class="text-block"></div>
 
                 <col><img
                     style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42); box-shadow: 3px 3px 3px;"
@@ -156,7 +157,7 @@
 
         </div>
         <!-- gallery section  -->
-        <div class="container">
+        <div class="row">
             <h2 class="title" style="
                     background-color: rgb(27, 38, 59);
                     color: white;
@@ -220,8 +221,8 @@
                 style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
                 src="images/Gallery/20210426_114442.jpg" alt="design">
         </div>
-        
-        <!-- project calculator section -->
+
+        <!-- project calculator title section -->
         <div class="container">
             <div class="row">
                 <h2 class="title" style="
@@ -239,52 +240,122 @@
                         margin-top: 300px;">Calculate your project</h2>
 
             </div>
+            <!-- this section is for the calculator html -->
             <div class="row">
+                <article id="calculator" class="col-xs-12 col-sm-6 pt-4" style="margin: 0 auto;">
+                    <div class="card text-white mb-3 mt-4" style="
+                                background-color: rgb(27, 38, 59);
+                                color: white;
+                                height: 1000px;
+                                width: 500px;
+                                font-size: 30px;
+                                margin: 0 auto;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 25px;
+                                margin-bottom: 50px;
+                                margin-top: 50px;
+                                padding-bottom: 20px;">
+                        <div class="card-body">
+                            <div class="title"><span class="ft">ft</span><sup>2</sup> <span
+                                    class="calculator">Calculator</span>
+                            </div>
+                            <p class="card-text">
+                                Calculate the square footage ...
+                            </p>
 
-                <div class="title" style="
-                        background-color: rgb(27, 38, 59);
-                        color: white;
-                        height: 600px;
-                        width: 400px;
-                        font-size: 30px;
-                        margin: 0 auto;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 25px;
-                        margin-bottom: 50px;
-                        margin-top: 50px;">
+                            <div class="row justify-content-start mb-4">
+                                <div class="col-6">
+                                    <div class="form-outline form-white">
 
-                    <div class="row" style="margin: 0 auto; justify-content: center;">
-                        <div class="length_wrapper" >
-                            <h3 style="text-align: center; margin-top: 20px;">Length</h3>
-                            <input type="text" style="margin-left: 25px;" id="length_feet" name="length_feet">
-                            <label for="length_feet">feet</label>
+                                        <input type="number" id="width" class="w-l-input form-control form-control-sm"
+                                            min="1" max="1000000" />
+                                        <label class="form-label" for="width">Width</label>
+
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-outline form-white">
+
+                                        <input type="number" id="length" class="w-l-input form-control form-control-sm"
+                                            min="1" max="1000000" />
+                                        <label class="form-label" for="length">Length</label>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="card-text">
+                                or enter the total square feet ...
+                            </p>
+
+                            <div class="row justify-content-start">
+                                <div class="col-12">
+                                    <div class="form-outline form-white">
+
+                                        <input type="number" id="total" class="form-control form-control-lg" min="1"
+                                            max="1000000" />
+                                        <label class="form-label" for="total">Total Square Feet</label>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
                         </div>
-                        <div class="width_wrapper">
-                            <h3 style="text-align: center; margin-top: 20px;">Width</h3>
-                            <input type="text" style="margin-left: 25px;" id="width_feet" name="width_feet">
-                            <label for="width_feet">feet</label>
-                        </div>
-                        
-                        <div class="total_wrapper">
-                            <h3 style="text-align: center; margin-top: 20px;">Total</h3>
-                            <input type="text" style="margin-left: 25px;" id="total" name="total">
-                            <label for="total">sq ft</label>
-                        </div>
-                        
-                        <button type="button" style="width: 200px; margin-top: 40px;" id="calculate" name="button">Calculate</button>
+
+
+                        <ul class="list-group list-group-flush text-dark">
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start pt-3 pb-3">
+                                <div class="ms-2 me-auto">
+                                    <h5 class="mb-1">Tile</h5>
+                                    <p class="description lh-sm">The avrage cost to install Tile per SqFt</p>
+                                </div>
+                                <span class="badge bg-success rounded-pill" id="tilecost">0</span>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start pt-3 pb-3">
+                                <div class="ms-2 me-auto">
+                                    <h5 class="mb-1">Hardood</h5>
+                                    <p class="description lh-sm">The avrage cost to install Hardwood per SqFt</p>
+                                </div>
+                                <span class="badge bg-success rounded-pill" id="hardwood">0</span>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start pt-3 pb-3">
+                                <div class="ms-2 me-auto">
+                                    <h5 class="mb-1">Laminate</h5>
+                                    <p class="description lh-sm">The avrage cost to install Laminate per SqFt</p>
+                                </div>
+                                <span class="badge bg-success rounded-pill" id="laminate">0</span>
+                            </li>
+
+                            <li class="list-group-item d-flex justify-content-between align-items-start pt-3 pb-3">
+                                <div class="ms-2 me-auto">
+                                    <h5 class="mb-1">Carpet</h5>
+                                    <p class="description lh-sm">The cost avrage to install Carpet per SqFt</p>
+                                </div>
+                                <span class="badge bg-success rounded-pill" id="carpet">0</span>
+                            </li>
+
+                        </ul>
+
+
                     </div>
-                </div>
-
             </div>
-
-
         </div>
-        <!-- references section -->
-        <div class="container">
-            <div class="row">
-                <h2 class="title" style="background-color: rgb(27, 38, 59);                    
+
+    </div>
+
+
+    </div>
+    <!-- references section -->
+    <div class="container">
+        <div class="row">
+            <h2 class="title" style="background-color: rgb(27, 38, 59);                    
                         color: white;
                         height: 80px;
                         width: 750px; 
@@ -296,7 +367,7 @@
                         border-radius: 25px; 
                         margin-bottom: 50px;
                         margin-top: 200px;">References and Testimonials</h2>
-                <div class="row" style="
+            <div class="row" style="
                 background-color: rgb(27, 38, 59);
                 color: white;
                 height: 600px;
@@ -309,23 +380,29 @@
                 border-radius: 25px;
                 margin-bottom: 50px;
                 margin-top: 50px;">
-                <div class="row">
-                    <col style="height: 100px; width: 100px; border-radius: 50%; background-color: white;">J.D
-                <hr style="border: 1px solid black;">
+                <div class="row" style="">
+
+                    <row style="height: 100px; width: 100px; border-radius: 50%; background-color: black; ">
+                        <col style="margin: 0 auto;">J.D
+                        <p></p>
+                    </row>
+
+                    <hr style="border: 1px solid black;">
+
                     <col style="height: 100px; width: 100px; border-radius: 50%; background-color: white;">M.J
 
-                    
-                    </div>
-                    <p style="font-size: 22px; margin-bottom: 100px; background-color: transparent;">
-                    </p>
+
                 </div>
+                <p style="font-size: 22px; margin-bottom: 100px; background-color: transparent;">
+                </p>
             </div>
         </div>
     </div>
-
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
 </body>
 
 </html>

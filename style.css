@@ -16,13 +16,26 @@
 
 }
 
-label {
-    font-size: 14px;
-    margin-right: 10px;
-    font-weight: 700;
+/* css for calculator */
+.title {
+	text-align:center;
+	padding: 6px;
+	border-bottom: 1px dotted #ffffff;
+	margin-bottom:16px;
+}
+.title .ft{
+	font-size:2em;
 }
 
-input,
-#total {
-    margin-bottom: 15px;
+.title sup {
+	font-size:1em;
+}
+.title .calculator {
+  font-style: italic;
+	font-weight:light;
+	color:#ffffff;
+}
+
+.description {
+	font-size:.7em;
 }
