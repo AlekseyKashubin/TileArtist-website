@@ -22,7 +22,7 @@
 .title {
   text-align: center;
   padding: 6px;
-  border-bottom: 1px dotted #ffffff;
+  border-bottom: 1px dotted rgb(65, 90, 119);
   margin-bottom: 16px;
 }
 
@@ -37,7 +37,7 @@
 .title .calculator {
   font-style: italic;
   font-weight: light;
-  color: #ffffff;
+  color: rgb(224, 225, 221);
 }
 
 .description {
@@ -64,6 +64,6 @@
 
   height: 400px;
   width: 400px;
-  
+
 
 }

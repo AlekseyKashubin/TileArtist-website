@@ -74,11 +74,11 @@ var formatter = new Intl.NumberFormat('en-US', {
 let map;
 
 async function initMap() {
-  const { Map } = await google.maps.importLibrary("maps");
-  map = new Map(document.getElementById("map"), {
-    center: { lat: 48.754902, lng: -122.478119 },
-    zoom: 12,
-  });
+    const { Map } = await google.maps.importLibrary("maps");
+    map = new Map(document.getElementById("map"), {
+        center: { lat: 48.754902, lng: -122.478119 },
+        zoom: 12,
+    });
 }
 
 initMap();
