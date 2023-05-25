@@ -64,3 +64,31 @@ var formatter = new Intl.NumberFormat('en-US', {
     //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
     //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
 });
+
+
+
+
+
+// map function
+
+let map;
+
+async function initMap() {
+  const { Map } = await google.maps.importLibrary("maps");
+  map = new Map(document.getElementById("map"), {
+    center: { lat: 48.754902, lng: -122.478119 },
+    zoom: 12,
+  });
+}
+
+initMap();
+
+
+
+
+
+
+
+
+
+
