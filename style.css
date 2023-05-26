@@ -4,6 +4,10 @@
   font-family: 'Oswald', sans-serif;
   
 }
+body{
+  padding: 0;
+  margin: 0;
+}
 
 
 .text-block {
@@ -66,4 +70,21 @@
   width: 400px;
 
 
+}
+
+/* gallery going from static to carosel */
+@media (max-width: 480px){
+
+#gallery {
+  display: none;
+}
+
+}
+
+@media (min-width: 481px){
+
+  #gallery-carousel {
+
+    display: none
+  }
 }

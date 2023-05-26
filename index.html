@@ -16,9 +16,14 @@
 </head>
 
 <body style="background-color: rgb(13, 27, 42);">
-    <div class="container" style="background-color: rgb(224, 225, 221)">
+
+    <!-- container hoilding all containers -->
+
+    <div class="container" style="background-color: rgb(224, 225, 221); justify-content: center;">
+
+        <!-- navbar section  -->
+
         <div class="container">
-            <!-- navbar section  -->
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
                     <img style="height: 80px;" src="images/logo/TAF-white.svg" alt="logo">
@@ -56,30 +61,27 @@
                     </div>
                 </div>
             </nav>
-            <!-- parallax img scetion  -->
-            <div class="container">
+        </div>
 
-                <div class="parallax">
-                    <!-- needs work -->
-                    <img style="height: 700px;
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                                margin-left: 10px;
-                                " src="images/logo/TAF.svg" alt="logo">
-                </div>
+        <!-- parallax img scetion  -->
+
+        <div class="container">
+            <div class="parallax">
+                <img style="height: 700px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            margin-left: 10px;
+                            " src="images/logo/TAF.svg" alt="logo">
             </div>
         </div>
 
-
-
         <!-- about us/ specialize section-->
-        <!-- justify-contet center  -->
-        <div class=" container">
 
+        <div class=" container" style="justify-content: center;">
             <div class="row">
-                <h2 class="title" style="background-color: rgb(27, 38, 59);                    
+                <h2 class="card" style="background-color: rgb(27, 38, 59);                    
                         color: rgb(224, 225, 221);
                         height: 80px;
                         width: 750px; 
@@ -103,11 +105,14 @@
                     Tile Installation, Custom Showers and much more.
                 </p>
             </div>
-            <!-- we specialize section here -->
+        </div>
 
+        <!-- we specialize section here -->
+
+        <div class=" container" style="justify-content: center;">
             <div class="row" style="justify-content: center;">
                 <div class="row">
-                    <h2 class="title" style="
+                    <h2 class="card" style="
                             background-color: rgb(27, 38, 59);
                             color: rgb(224, 225, 221);
                             height: 80px;
@@ -121,23 +126,27 @@
                             margin-bottom: 50px;
                             margin-top: 300px;">We Specialize In</h2>
                 </div>
+
                 <!-- top row of images for we specialize -->
-                <div class="container" style=" margin: 0 auto;">
+
+                <div class="container-fluid" style=" margin: 0 auto;">
                     <div class="row" style="margin: 0 auto; justify-content: center; align-items: center; ">
-                        <div class="col" style="margin: 0 auto; justify-content: center; align-items: center; ">
+                        <div class="col-sm-4" style="margin: 0 auto; justify-content: center; align-items: center; ">
                             <img style="height: 350px; width: 350px; margin: 20px; border-radius: 45px; border: 3px solid rgb(13, 27, 42); box-shadow: 3px 3px 3px;"
                                 src="images/carpet_look.jpg" alt="carpet">
                         </div>
-                        <div class="col" style="margin: 0 auto; justify-content: center; align-items: center; ">
+                        <div class="col-sm-4" style="margin: 0 auto; justify-content: center; align-items: center; ">
                             <img style="height: 350px; width: 350px; margin: 20px; border-radius: 50px; border: 3px solid rgb(13, 27, 42); box-shadow: 3px 3px 3px;"
                                 src="images/tile_floor.jpg" alt="tile floor">
                         </div>
-                        <div class="col" style="margin: 0 auto; justify-content: center; align-items: center; ">
+                        <div class="col-sm-4" style="margin: 0 auto; justify-content: center; align-items: center; ">
                             <img style="height: 350px; width: 350px; margin: 20px; border-radius: 50px; border: 3px solid rgb(13, 27, 42); box-shadow: 3px 3px 3px;"
                                 src="images/quartzbackground.jpg" alt="countertop">
                         </div>
                     </div>
+
                     <!-- bottom row of images for we specialize -->
+
                     <div class="row" style="margin: 0 auto; justify-content: center; align-items: center;">
                         <div class="col">
                             <img style="height: 350px; width: 350px; margin: 20px; border-radius: 50px; border: 3px solid rgb(13, 27, 42); box-shadow: 3px 3px 3px;"
@@ -159,26 +168,29 @@
 
 
 
-        <!-- gallery section  -->
-        
-            <div class="row">
-                <h2 class="title" style="
-                        background-color: rgb(27, 38, 59);
-                        color: rgb(224, 225, 221);
-                        height: 80px;
-                        width: 750px;
-                        font-size: 30px;
-                        margin: 0 auto;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 25px;
-                        margin-bottom: 50px;
-                        margin-top: 300px;">Gallery</h2>
+        <!-- gallery section static -->
+
+        <div class="container" id="gallery" style="justify-content: center;">
+            <div class="row" style="justify-content: center;">
+                <div class="row">
+                    <h2 class="card" style="
+                            background-color: rgb(27, 38, 59);
+                            color: rgb(224, 225, 221);
+                            height: 80px;
+                            width: 750px;
+                            font-size: 30px;
+                            margin: 0 auto;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 25px;
+                            margin-bottom: 50px;
+                            margin-top: 300px;">Gallery</h2>
+                </div>
             </div>
-            
+
             <!-- first row of images for gallery -->
-            <div class="container"  style="margin: 0 auto;">
+
             <div class="row">
                 <div class="col">
                     <img style="height: 350px; width: 350px; margin: 20px; border-radius: 45px; border: 3px solid rgb(13, 27, 42);"
@@ -189,11 +201,13 @@
                         src="images/Gallery/2.jpg" alt="tile floor">
                 </div>
                 <div class="col">
-                    <img style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
+                    <img style="height: 350px; width: 350px; margin: 20px; border-radius: 50px; border: 3px solid rgb(13, 27, 42);"
                         src="images/Gallery/3.jpg" alt="countertop">
                 </div>
             </div>
+
             <!-- second row of images for gallery -->
+
             <div class="row" style="justify-content: center;">
                 <div class="col">
                     <img style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
@@ -208,12 +222,13 @@
                         src="images/Gallery/6.jpg" alt="design">
                 </div>
             </div>
+
             <!-- third row of images for gallery -->
+
             <div class="row" style="justify-content: center;">
                 <div class="col">
                     <img style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
-                        src="images/Gallery/7.jpg"
-                        alt="cabinets">
+                        src="images/Gallery/7.jpg" alt="cabinets">
                 </div>
                 <div class="col">
                     <img style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
@@ -224,7 +239,9 @@
                         src="images/Gallery/9.jpg" alt="design">
                 </div>
             </div>
+
             <!-- forth row of images for gallery -->
+
             <div class="row" style="justify-content: center;">
                 <div class="col">
                     <img style="height: 350px; width: 350px; margin: 20px; border-radius: 50px;border: 3px solid rgb(13, 27, 42);"
@@ -241,11 +258,83 @@
             </div>
         </div>
 
+        <!-- gallery section carosel -->
 
+
+        <div class="container" id="gallery-carousel" style="justify-content: center;">
+            <div class="row" style="justify-content: center;">
+                <div class="row">
+                    <h2 class="card" style="
+                            background-color: rgb(27, 38, 59);
+                            color: rgb(224, 225, 221);
+                            height: 80px;
+                            width: 750px;
+                            font-size: 30px;
+                            margin: 0 auto;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 25px;
+                            margin-bottom: 50px;
+                            margin-top: 300px;">Gallery</h2>
+                </div>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/Gallery/1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Gallery/2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Gallery/3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Gallery/4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Gallery/5.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Gallery/6.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Gallery/7.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Gallery/8.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Gallery/9.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Gallery/10.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Gallery/11.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Gallery/12.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
 
         <!-- project calculator title section -->
         <!-- base code for calculator... https://codepen.io/kennethmcaple/pen/eYgejyK -->
-        <div class="container">
+
+        <div class="container" style="justify-content: center;">
             <div class="row">
                 <h2 class="title" style="
                         background-color: rgb(27, 38, 59);
@@ -260,17 +349,15 @@
                         border-radius: 25px;
                         margin-bottom: 50px;
                         margin-top: 300px;">Calculate your project</h2>
-
             </div>
-            <!-- this section is for the calculator html -->
-            <div class="row">
-                <article id="calculator">
+            <div class="row" style="justify-content: center;">
+                <div id="calculator">
                     <div class="card" style="
                                 background-color: rgb(27, 38, 59);
                                 color: rgb(224, 225, 221);
-                                height: 1000px;
-                                width: 500px;
-                                font-size: 30px;
+                                height: 850px;
+                                width: 450px;
+                                font-size: 25px;
                                 margin: 0 auto;
                                 display: flex;
                                 align-items: center;
@@ -278,8 +365,7 @@
                                 border-radius: 25px;
                                 margin-bottom: 50px;
                                 margin-top: 50px;
-                                padding-bottom: 20px;">
-
+                                padding-bottom: 25px;">
                         <div class="card-body">
                             <div class="title"><span class="ft">ft</span><sup>2</sup> <span
                                     class="calculator">Calculator</span>
@@ -287,96 +373,83 @@
                             <p class="card-text">
                                 Calculate the square footage ...
                             </p>
-
                             <div class="row justify-content-start mb-4">
                                 <div class="col-6">
                                     <div class="form-outline form-white">
-
                                         <input type="number" id="width" class="w-l-input form-control form-control-sm"
                                             min="1" max="1000000">
                                         <label class="form-label" for="width">Width</label>
-
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-outline form-white">
-
                                         <input type="number" id="length" class="w-l-input form-control form-control-sm"
                                             min="1" max="1000000">
                                         <label class="form-label" for="length">Length</label>
-
                                     </div>
                                 </div>
                             </div>
-
                             <p class="card-text">
                                 or enter the total square feet ...
                             </p>
-
                             <div class="row justify-content-start">
                                 <div class="col-12">
                                     <div class="form-outline form-white">
-
                                         <input type="number" id="total" class="form-control form-control-lg" min="1"
                                             max="1000000">
                                         <label class="form-label" for="total">Total Square Feet</label>
-
                                     </div>
                                 </div>
-
                             </div>
-
-
                         </div>
-
-
                         <ul class="list-group list-group-flush text-dark">
-
-                            <li class="list-group-item d-flex justify-content-between align-items-start pt-3 pb-3" style="background-color: rgb(224, 225, 221);">
+                            <li class="list-group-item d-flex justify-content-between align-items-start pt-3 pb-3"
+                                style="background-color: rgb(224, 225, 221);">
                                 <div class="ms-2 me-auto">
                                     <h5 class="mb-1">Tile</h5>
                                     <p class="description lh-sm">The avrage cost to install Tile</p>
                                 </div>
-                                <span class="badge rounded-pill"  style="background-color: rgb(119, 141, 169);" id="tilecost">0</span>
+                                <span class="badge rounded-pill" style="background-color: rgb(119, 141, 169);"
+                                    id="tilecost">0</span>
                             </li>
-
-                            <li class="list-group-item d-flex justify-content-between align-items-start pt-3 pb-3" style="background-color: rgb(224, 225, 221);">
+                            <li class="list-group-item d-flex justify-content-between align-items-start pt-3 pb-3"
+                                style="background-color: rgb(224, 225, 221);">
                                 <div class="ms-2 me-auto">
                                     <h5 class="mb-1">Hardood</h5>
                                     <p class="description lh-sm">The avrage cost to install Hardwood</p>
                                 </div>
-                                <span class="badge rounded-pill" style="background-color: rgb(119, 141, 169);" id="hardwood">0</span>
+                                <span class="badge rounded-pill" style="background-color: rgb(119, 141, 169);"
+                                    id="hardwood">0</span>
                             </li>
-
-                            <li class="list-group-item d-flex justify-content-between align-items-start pt-3 pb-3" style="background-color: rgb(224, 225, 221);">
+                            <li class="list-group-item d-flex justify-content-between align-items-start pt-3 pb-3"
+                                style="background-color: rgb(224, 225, 221);">
                                 <div class="ms-2 me-auto">
                                     <h5 class="mb-1">Laminate</h5>
                                     <p class="description lh-sm">The avrage cost to install Laminate</p>
                                 </div>
-                                <span class="badge rounded-pill" style="background-color: rgb(119, 141, 169);" id="laminate">0</span>
+                                <span class="badge rounded-pill" style="background-color: rgb(119, 141, 169);"
+                                    id="laminate">0</span>
                             </li>
-
-                            <li class="list-group-item d-flex justify-content-between align-items-start pt-3 pb-3" style="background-color: rgb(224, 225, 221);">
+                            <li class="list-group-item d-flex justify-content-between align-items-start pt-3 pb-3"
+                                style="background-color: rgb(224, 225, 221);">
                                 <div class="ms-2 me-auto">
                                     <h5 class="mb-1">Carpet</h5>
                                     <p class="description lh-sm">The cost avrage to install Carpet</p>
                                 </div>
-                                <span class="badge rounded-pill" style="background-color: rgb(119, 141, 169);" id="carpet">0</span>
+                                <span class="badge rounded-pill" style="background-color: rgb(119, 141, 169);"
+                                    id="carpet">0</span>
                             </li>
-
                         </ul>
 
 
                     </div>
-                </article>
+                </div>
             </div>
-
         </div>
 
-
-
         <!-- references section -->
-        <div class="container">
+
+        <div class="container" style="justify-content: center;">
             <div class="row">
                 <h2 class="title" style="background-color: rgb(27, 38, 59);                    
                         color: rgb(224, 225, 221);
@@ -454,8 +527,10 @@
                 </div>
             </div>
         </div>
+
         <!-- contacts section  -->
-        <div class="container justify-content">
+
+        <div class="container" style="justify-content: center;">
             <div class="row">
                 <h2 class="title" style="
                         background-color: rgb(27, 38, 59);
@@ -501,18 +576,21 @@
                         justify-content: center;
                         border-radius: 25px;
                         margin-bottom: 50px;
-                        margin-top: 50px;" ></div>
+                        margin-top: 50px;"></div>
                     </div>
-                    <div class="col-sm-2">
-                        <h1 class="row"><i class="bi bi-instagram" style="margin-bottom: 55px;" ></i></h1>
-                        <h1 class="row"><i class="bi bi-facebook" style="margin-bottom: 55px;" ></i></h1>
-                        <h1 class="row"><i class="bi bi-twitter" style="margin-bottom: 55px;" ></i></h1>
+                    <div class="col-sm-2" style="justify-content: center;">
+                        <h1 class="row"><i class="bi bi-instagram" style="margin-bottom: 55px;"></i></h1>
+                        <h1 class="row"><i class="bi bi-facebook" style="margin-bottom: 55px;"></i></h1>
+                        <h1 class="row"><i class="bi bi-twitter" style="margin-bottom: 55px;"></i></h1>
 
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <h2 class="title" style="
+
+        </div>
+        <!-- back to top bar -->
+        <div class="row">
+            <h2 class="title" style="
                         background-color: rgb(27, 38, 59);
                         color: rgb(224, 225, 221);
                         height: 60px;
@@ -525,11 +603,11 @@
                         border-radius: 25px;
                         margin-bottom: 50px;
                         margin-top: 300px;">Back to Top</h2>
-            </div>
         </div>
-
     </div>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjDWQBf0OUkBSDTjFAnnyclj8BGevWHU0&callback=initMap"></script>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjDWQBf0OUkBSDTjFAnnyclj8BGevWHU0&callback=initMap"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -537,4 +615,3 @@
 </body>
 
 </html>
-
